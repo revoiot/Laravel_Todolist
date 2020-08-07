@@ -9,7 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class FolderController extends Controller
 {
-    // 中略
+
+    public function showCreateForm()
+    {
+        return view('folders/create');
+    }
+
 
     public function create(CreateFolder $request)
     {
